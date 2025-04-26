@@ -1,0 +1,30 @@
+@mixin listStyles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 50%;
+  margin: 20px 0;
+  padding: 4px 9px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
+
+@mixin flexCenter($justifyContent: flex-start, $gap: 0) {
+  display: flex;
+  align-items: center;
+  justify-content: $justifyContent;
+  gap: $gap;
+}
+@mixin productListStyles {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 40px;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  padding: 9px;
+  border-radius: 8px;
+}

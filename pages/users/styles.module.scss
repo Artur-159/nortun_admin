@@ -1,0 +1,84 @@
+.addAdmin {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+
+  .user_name_input {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .search_info {
+    display: flex;
+    align-items: center;
+
+    .btn_list {
+      display: flex;
+      gap: 15px;
+      justify-content: space-between;
+      width: 560px;
+      margin: 20px 0px;
+
+      > button {
+        white-space: nowrap;
+      }
+    }
+
+    .create_btn_link {
+      margin-left: 62px;
+
+      .create_user_link {
+        color: #0055a3;
+      }
+    }
+    .search {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .search_inp {
+        margin-left: 40px;
+        background-color: white;
+      }
+
+      .search_icon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        color: #1976d2;
+        background-color: white;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.addAdmin {
+  width: 85%;
+}
+
+.create_user {
+  max-width: 450px;
+
+  .user_box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 600px;
+
+    .form_input {
+      width: 100%;
+    }
+
+    div {
+      margin-top: 0 !important;
+    }
+  }
+
+  .btn_create {
+    margin: 20px auto 0;
+    display: flex;
+  }
+}

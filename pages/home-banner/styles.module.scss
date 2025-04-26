@@ -1,0 +1,93 @@
+@import "../../styles/mixins";
+@import "../../styles/index";
+
+body {
+  background: #fafbfd;
+}
+
+.home {
+  width: 100%;
+  margin-top: 40px;
+
+  &__banner__list {
+    @include productListStyles;
+
+    &__btn {
+      display: flex;
+      gap: 6px;
+    }
+  }
+
+  .home_button {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-bottom: 50px;
+  }
+  .element {
+    margin-top: 40px;
+  }
+  .btn {
+    margin-bottom: 200px;
+  }
+}
+
+.homeBanner_forms {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.homeBanner_forms_desc {
+  width: 700px;
+}
+
+.home_banner {
+  margin: 0 50px;
+}
+
+.home_banner_inp {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ align-items: center;
+ gap: 20px;
+ margin-bottom: 40px;
+
+
+  div {
+    width: 100%;
+
+    > div {
+      padding-top: 0;
+      button {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.banner_video_block {
+  display: flex;
+  gap: 50px;
+
+  div {
+    width: 100%;
+  }
+}
+
+.banner_date {
+  width: 100% !important;
+}
+
+.banner_title {
+  margin-bottom: 30px !important;
+}
+
+.video_inp {
+  margin-top: 80px;
+}
+
+.btn {
+  margin-bottom: 100px !important;
+}

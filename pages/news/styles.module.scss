@@ -1,0 +1,15 @@
+@import "../../styles/mixins";
+@import "../../styles/index";
+
+
+
+.list_block {
+  margin-top: 50px;
+  width: 90%;
+
+  .news_item {
+    @include listItam()
+  }
+}
+
+

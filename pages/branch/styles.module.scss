@@ -1,0 +1,17 @@
+@import '../../styles/mixins';
+@import '../../styles/index';
+
+
+.list_block {
+    margin-top: 50px;
+    width: 90%;
+    .home__banner__list {
+        @include listItam();
+
+        .home__banner__list__btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}

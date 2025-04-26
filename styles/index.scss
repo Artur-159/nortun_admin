@@ -1,0 +1,74 @@
+@import "react-toastify/dist/ReactToastify.min.css";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.main_container {
+  margin-left: 20px;
+  height: 92vh;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 40px;
+  color: #0055a3;
+}
+
+@mixin listItam($gap: 10px, $padding: 12px 16px, $bg: white) {
+  @include flexCenter(space-between, $gap);
+  padding: $padding;
+  background: $bg;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 20px;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  div:first-child {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .action_btns {
+    display: flex;
+    gap: 10px;
+
+    button {
+      transition: all 0.2s ease-in-out;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+

@@ -1,0 +1,28 @@
+@import '../../styles/mixins';
+@import '../../styles/index';
+
+
+.about_block {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input {
+  width: 100%;
+}
+
+
+.about {
+  display: flex;
+  flex-direction: column;
+
+  .about_info {
+    margin-bottom: 150px;
+    width: 100%;
+  }
+
+  .btn {
+    width: 150px;
+    margin-bottom: 100px;
+  }
+}
